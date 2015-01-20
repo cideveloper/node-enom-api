@@ -24,7 +24,7 @@ var client = new Enom({
 ````
 
 | Option  | Required | Description | Default |
-| ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- |
 | uid  | true  | ENOM reseller username | null  |
 | pw  | true  | ENOM reseller password | null  |
 | response  | false  | *xml* or *json* | xml  |
