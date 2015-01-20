@@ -16,5 +16,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "merge": "^1.2.0",
+    "request": "^2.51.0",
+    "xml2js": "^0.4.4"
+  }
 }
