@@ -4,8 +4,8 @@ This is a simple library to interface with the ENOM API.
 
 ## Installation
 
-``` bash
-  $ npm install node-enom-api --save
+``` shell
+npm install node-enom-api --save
 ```
 
 ## Configuration
