@@ -1,7 +1,7 @@
 {
   "name": "node-enom-api",
   "description": "Node.js library for ENOM API",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Darius Patel <dpatel@cideveloper.com>",
   "repository": {
     "type": "git",
