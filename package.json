@@ -1,0 +1,20 @@
+{
+  "name": "node-enom-api",
+  "description": "Node.js library for ENOM API",
+  "version": "0.0.1",
+  "author": "Darius Patel <dpatel@cideveloper.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cideveloper/node-enom-api.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/cideveloper/node-enom-api/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js"
+}
