@@ -13,7 +13,7 @@ npm install node-enom-api --save
 You will need an ENOM reseller account in order to use the functionality of this module. You can become an ENOM reseller [here](http://www.enom.com/resellers/benefits-pricingplans.aspx).
 
 ````javascript
-var Enom = require('../node-enom-api');
+var Enom = require('node-enom-api');
 
 var client = new Enom({
   uid: "resellid",
@@ -24,20 +24,30 @@ var client = new Enom({
 ````
 
 | Option  | Required | Description | Default |
-| ------------- | ------------- | ------------- | ------------- |
+| :------------- | :------------- | :------------- | :------------- |
 | uid  | true  | ENOM reseller username | null  |
 | pw  | true  | ENOM reseller password | null  |
 | response  | false  | *xml* or *json* | xml  |
 | mode  | false | *live* or *testing* | live  |
 
 ## Usage
+
 **See Configuration section above for *client* config**
 
 ````javascript
-client.get('check', {sld: "unusualTVname", tld: "tv"}, function(error, data){
-  if (error) {
-    console.log(error);
-  };
+client.get(command, inputParams, function(error, ReturnedParamAndValues){
+  if (error) {console.log(error)};
+  console.log(ReturnedParamAndValues);
+});
+````
+
+ENOM commands can be viewed at http://www.enom.com/APICommandCatalog/index.htm
+
+## Example
+
+````javascript
+client.get('Check', {sld: "unusualTVname", tld: "tv"}, function(error, data){
+  if (error) {console.log(error)};
   console.log(data);
 });
 ````
